@@ -8,8 +8,7 @@ function Home({swichToOrderPage, swichToSingUpPage, swichToLogInPage}){
   const [CartBooks, setCartBook] = useState([])
   const [pp, setp]=useState(false)
   function rerender(){
-    setBookList(bookList);
-    newbookList = bookList
+    setBookList([...bookList]);
   }
   const toggleDescription = (index) => {
     setp((e) => ({
